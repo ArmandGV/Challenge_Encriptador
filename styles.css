@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    order: 1;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+   
+    height: 100vh;
+    margin: 40px 40px 0;
+    }
+
+.contenido div{    
+    vertical-align: top;   
+        
+}
+
+.logo{
+    flex: 1;
+    order: 1;
+}
+
+
+.logo img{
+    width: 88px;
+    height: 40px;
+    margin: 0 0 auto;
+    
+}
+
+.encriptador{
+    flex: 4;
+    order: 2;
+  
+ }
+
+.mensaje{
+    background: #E5E5E5;
+    width: 577px;
+    height: 448px;   
+    margin: 96px 0 8px;
+    color: #0A3871;
+    font-family: inter;
+    font-size: 32px;
+    text-align: left;
+    border: none;
+
+}
+.mensaje::placeholder{
+    color: #0A3871;
+    font-family: inter;
+    font-size: 32px;
+    text-align: left;
+   
+}
+
+.advertencia{
+    text-align: left;
+    font-family: inter;
+    font-size: 16px;
+    width: 300px;
+    height: 18px;
+    margin-bottom: 8px;
+   
+}
+
+.advertencia img{
+    width: 16px;
+    height: 16px;
+}
+
+.botones{
+    width: 680px;
+    height: 68px;
+
+}
+
+.boton-encriptar{
+    width: 328px;
+    height: 68px;
+    border-radius: 16px;
+    padding: 24px;
+    background: #0A3871;
+    font-size: 24px;
+}
+
+.boton-desencriptar{
+    width: 328px;
+    height: 68px;
+    border-color: #0A3871;
+    background: #D8DFE8;
+    border-radius: 16px;
+    padding: 24px;
+    font-size: 24px;
+    
+}
+
+.codificador{
+    flex: 1;
+    order: 3;
+    height: 700px;
+    background: white;
+    border-radius: 32px;
+
+ }
+.muneco{
+    width: 336px;
+    height: 304px;
+    margin: 143px 12px 0 ;
+  
+}
+.ningun-mensaje{
+    width: 240px;
+    height: 40;
+    Font-family: Inter;
+    Font-style: Bold;
+    Font-size: 24px;
+    line-height: 29px;
+    Line-height: 120%;
+    text-align: Center;
+    margin: 0 auto;
+
+}
+.ingrese-mensaje{
+    width: 336px;
+    height: 48px;
+    font-family: inter;
+    font-size: 18px;
+    line-height: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 auto;
+ 
+  
+}
+
+footer{
+    order: 2;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.copyright{    
+    font-size: 13px;
+    margin: 20px;
+}
