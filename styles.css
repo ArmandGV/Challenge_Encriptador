@@ -13,8 +13,7 @@ main{
 
 .contenido{
     display: flex;
-    flex-direction: row;
-   
+    flex-direction: row;   
     height: 100vh;
     margin: 40px 40px 0;
     }
@@ -25,20 +24,19 @@ main{
 }
 
 .logo{
-    flex: 1;
+    width: 16%;
     order: 1;
 }
 
 
 .logo img{
-    width: 88px;
-    height: 40px;
+    width: 120px; 
     margin: 0 0 auto;
     
 }
 
 .encriptador{
-    flex: 4;
+    width: 55%;
     order: 2;
   
  }
@@ -60,8 +58,10 @@ main{
     font-family: inter;
     font-size: 32px;
     text-align: left;
+    font-weight: bold;
    
 }
+
 
 .advertencia{
     text-align: left;
@@ -69,88 +69,211 @@ main{
     font-size: 16px;
     width: 300px;
     height: 18px;
-    margin-bottom: 8px;
-   
+    margin: 12px 0;   
 }
 
-.advertencia img{
-    width: 16px;
-    height: 16px;
-}
+
 
 .botones{
     width: 680px;
     height: 68px;
-
 }
 
-.boton-encriptar{
+.boton{
     width: 328px;
     height: 68px;
     border-radius: 16px;
-    padding: 24px;
-    background: #0A3871;
+    padding: 16px;
     font-size: 24px;
-}
-
-.boton-desencriptar{
-    width: 328px;
-    height: 68px;
     border-color: #0A3871;
-    background: #D8DFE8;
-    border-radius: 16px;
-    padding: 24px;
-    font-size: 24px;
-    
+    font-family: inter;
+}
+.boton.encriptar{
+    background: #0A3871;   
+    color: white;
+}
+
+.boton.desencriptar{ 
+    background: #D8DFE8; 
+    color: black;  
 }
 
 .codificador{
-    flex: 1;
+    width: 29%;
     order: 3;
-    height: 700px;
-    background: white;
-    border-radius: 32px;
+    align-items: end;
 
+ 
  }
+ .codificado{
+    width: 360px;
+    height: 680px;
+    background-color: white;
+    border-radius: 32px;
+    margin-left: 60px;
+   
+  
+ }
+
 .muneco{
     width: 336px;
-    height: 304px;
-    margin: 143px 12px 0 ;
-  
+    margin: 143px 20px 0px ;  
+    align-items: center;
 }
+
 .ningun-mensaje{
-    width: 240px;
-    height: 40;
+    width: 240px;  
     Font-family: Inter;
-    Font-style: Bold;
+    font-weight: Bold;
     Font-size: 24px;
-    line-height: 29px;
     Line-height: 120%;
     text-align: Center;
     margin: 0 auto;
-
 }
+
 .ingrese-mensaje{
     width: 336px;
-    height: 48px;
     font-family: inter;
     font-size: 18px;
-    line-height: 24px;
     line-height: 150%;
     text-align: center;
     margin: 0 auto;
- 
-  
+    font-weight: Bold;  
 }
 
 footer{
+    width: 100%;
     order: 2;
     text-align: center;
     padding: 40px;
-
 }
 
 .copyright{    
     font-size: 13px;
     margin: 20px;
+}
+
+@media screen and (max-width:1400px) and (min-width:769px) {
+    .mensaje{
+        height: 360px;
+    }
+ 
+    .codificado{
+        margin-left: 24px;
+        height: 600px;
+    }
+    .muneco{
+        margin: 100px 16px 0 ;  
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:416px) {
+    .contenido{
+           flex-direction: column;
+           margin: 0px;
+    }
+    .col{
+        width: 100%;     
+    }
+    .logo {
+        margin-top: 40px;
+    }
+   
+    .logo img{
+       width: 88px;
+    }
+    .encriptador{
+        padding: 0px 40px;
+    }
+    .mensaje{
+        width: 688px;
+        height: 500px;
+    }
+    .advertencia{
+        width: 688px;
+    }
+    .botones{
+        width: 688px;
+    }
+    .boton{
+        width: 332px;
+        margin: 4px;
+    }
+ 
+    .codificador{        
+        align-items: center;
+    }
+    .codificado{
+        width: 680px;
+        height: 133px;
+        margin: 44px 40px;
+    }
+    .muneco{
+        width: 0;
+        visibility: hidden;
+        margin: 0 ;  
+    }
+}
+
+@media screen and (max-width:415px) and (min-width:400px){
+.contenido{
+    flex-direction: column;
+    margin: 0px;
+     
+ }
+ div{
+    display: flex;
+    flex-direction: column;
+ }
+ .col {
+    width: 100%;
+ }
+
+ .logo {
+     margin: 20px 0px;
+ }
+
+ .logo img{
+    width: 80px;
+ }
+ .encriptador{
+    width: 380px;
+    height: 640px;
+    margin: 16px;
+
+ }
+ .mensaje{
+    margin: 8px 0px 8px;
+     width: 100%;
+     height: 400px;
+ }
+
+ .advertencia{
+     width: 100%;
+     font-size: 12px;
+ }
+ .botones{
+     width: 100%;
+     height: 158px;
+     align-items: center;
+ }
+ .boton{
+    width: 100%;
+    margin: 8px 0px;
+ }
+
+ .codificador{
+    align-items: center;
+ }
+ .codificado{
+    margin: 0px 16px;
+    width: 380px;
+    height: 140px;
+}
+ .muneco{
+     width: 0;
+     visibility: hidden;
+     margin: 0 ;  
+ }
+
 }
