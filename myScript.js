@@ -7,9 +7,7 @@ var alturaCodificador = document.getElementById('codificador');
 var alturaCodificado = document.getElementById('codificado');
 console.log(alturaCodificador.clientHeight);
 function encriptar() {
-    // alturaCodificador.style.height = "300px";
-    // alturaCodificado.style.height = "280px";
- 
+
     mensaje = mensajes.value;
    
     if (expreg.test(mensaje) == true) {
@@ -42,8 +40,7 @@ function modificarAltura(){
 
 
     }
-    // alturaCodificador.style.height = "300px";
-    // alturaCodificado.style.height = "280px";
+
 }
 function copiar() {
 

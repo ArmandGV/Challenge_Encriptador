@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #bccad3;
+    background: #E5E5E5;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ main {
 }
 
 .mensaje {
-    background: #bccad3;
+    background: #E5E5E5;
     width: 577px;
     height: 448px;
     margin: 96px 0 8px;
