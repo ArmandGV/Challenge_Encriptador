@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script async src="myScript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -10,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+       
     <main>
         <div class="contenido">
             <div class="col logo" >
@@ -18,7 +19,7 @@
             </div>
             
             <div class="col encriptador">        
-                    <textarea name="mensaje"  class="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea name="mensaje"  class="mensaje" placeholder="Ingrese el texto aquí" id="mensaje"></textarea>
                   
                     <p class="advertencia"> <img src="imagenes/Vector.png" alt=""> Solo letras minúsculas y sin acentos</p>
                     <div class="botones">
@@ -28,11 +29,13 @@
                 
             </div>
     
-            <div class="col codificador">  
-                <section class="codificado">
-                    <img src="imagenes/Muñeco.png"  class="muneco">
-                    <p class="ningun-mensaje">Ningún mensaje fue encontrado</p>
-                    <p class="ingrese-mensaje"  >Ingrese el texto que desees encriptar o desencriptar. </p>
+            <div class="col codificador" id="codificador">  
+                <section class="codificado"  id="codificado"> 
+                    <p class="mns-codificado" id="mns-codificado"></p>              
+                    <img src="imagenes/Muñeco.png"  class="muneco" id="muneco">
+                    <p class="ningun-mensaje" id="ningun-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="ingrese-mensaje"  id="ingrese-mensaje">Ingrese el texto que desees encriptar o desencriptar. </p>
+                    <button class="boton copiar" id="copiar">Copiar</button>
                 </section>                  
                         
             </div>              
@@ -45,6 +48,7 @@
         <p class="copyright">&copy Copyright Armando Gonzalez V- 2023 </p>
     </footer>
      
-     
+
+  
 </body>
 </html>

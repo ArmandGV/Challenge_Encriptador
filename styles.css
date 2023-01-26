@@ -1,50 +1,52 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    background: #E5E5E5;
+
+body {
+    background: #bccad3;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
 }
-main{
+
+main {
     order: 1;
 }
 
-.contenido{
+.contenido {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     height: 100vh;
     margin: 40px 40px 0;
-    }
-
-.contenido div{    
-    vertical-align: top;   
-        
 }
 
-.logo{
+.contenido div {
+    vertical-align: top;
+
+}
+
+.logo {
     width: 16%;
     order: 1;
 }
 
 
-.logo img{
-    width: 120px; 
+.logo img {
+    width: 120px;
     margin: 0 0 auto;
-    
+
 }
 
-.encriptador{
+.encriptador {
     width: 55%;
     order: 2;
-  
- }
 
-.mensaje{
-    background: #E5E5E5;
+}
+
+.mensaje {
+    background: #bccad3;
     width: 577px;
-    height: 448px;   
+    height: 448px;
     margin: 96px 0 8px;
     color: #0A3871;
     font-family: inter;
@@ -53,227 +55,304 @@ main{
     border: none;
 
 }
-.mensaje::placeholder{
+
+.mensaje::placeholder {
     color: #0A3871;
     font-family: inter;
     font-size: 32px;
     text-align: left;
     font-weight: bold;
-   
+
 }
 
 
-.advertencia{
+.advertencia {
     text-align: left;
     font-family: inter;
     font-size: 16px;
     width: 300px;
     height: 18px;
-    margin: 12px 0;   
+    margin: 12px 0;
+    color: #0A3871;
+    font-weight: bold;
 }
 
 
 
-.botones{
+.botones {
     width: 680px;
     height: 68px;
 }
 
-.boton{
+
+
+.boton {
     width: 328px;
-    height: 68px;
+    height: 64px;
     border-radius: 16px;
-    padding: 16px;
+    padding: 12px;
     font-size: 24px;
     border-color: #0A3871;
     font-family: inter;
 }
-.boton.encriptar{
-    background: #0A3871;   
+.boton:hover{
+    font-size: 28px;
+}
+
+.boton.encriptar {
+    background: #0A3871;
     color: white;
 }
 
-.boton.desencriptar{ 
-    background: #D8DFE8; 
-    color: black;  
+.boton.desencriptar {
+    background: #D8DFE8;
+    color: black;
 }
 
-.codificador{
+.codificador {
     width: 29%;
     order: 3;
     align-items: end;
 
- 
- }
- .codificado{
+
+}
+
+.codificado {
     width: 360px;
     height: 680px;
+    color: #0A3871;
     background-color: white;
     border-radius: 32px;
-    margin-left: 60px;
-   
-  
- }
+    margin: auto;
 
-.muneco{
+}
+
+.muneco {
     width: 336px;
-    margin: 143px 20px 0px ;  
+    margin: 140px 8px 16px;
     align-items: center;
 }
 
-.ningun-mensaje{
-    width: 240px;  
+.mns-codificado {
+    display: none;
+    width: 336px;
+    height: 560px;
+    Font-family: Inter;
+    font-weight: Bold;
+    Font-size: 24px;
+    Line-height: 120%;
+    text-align: Center;
+    overflow: auto;
+    margin: 16px auto;
+}
+
+.ningun-mensaje {
+    width: 336px;
     Font-family: Inter;
     font-weight: Bold;
     Font-size: 24px;
     Line-height: 120%;
     text-align: Center;
     margin: 0 auto;
+
 }
 
-.ingrese-mensaje{
+.ingrese-mensaje {
     width: 336px;
     font-family: inter;
     font-size: 18px;
     line-height: 150%;
     text-align: center;
     margin: 0 auto;
-    font-weight: Bold;  
+    font-weight: Bold;
 }
 
-footer{
+.copiar {
+    display: none;
+    margin: 0px 16px;
+    background: #D8DFE8;
+    color: black;
+
+}
+
+footer {
     width: 100%;
     order: 2;
     text-align: center;
     padding: 40px;
 }
 
-.copyright{    
+.copyright {
     font-size: 13px;
     margin: 20px;
 }
 
 @media screen and (max-width:1400px) and (min-width:769px) {
-    .mensaje{
+    .mensaje {
         height: 360px;
     }
- 
-    .codificado{
+
+    .codificado {
         margin-left: 24px;
         height: 600px;
+        padding: 16px auto;
     }
-    .muneco{
-        margin: 100px 16px 0 ;  
+
+    .mns-codificado {
+        width: 320px;
+        height: 500px;
+        margin: 0px auto;
+    }
+
+    .muneco {
+        margin: 94px 16px 0;
     }
 }
 
 @media screen and (max-width:768px) and (min-width:416px) {
-    .contenido{
-           flex-direction: column;
-           margin: 0px;
+    .contenido {
+        flex-direction: column;
+        margin: 0px;
+        height: auto;
     }
-    .col{
-        width: 100%;     
+
+    .col {
+        width: 100%;
     }
+
     .logo {
         margin-top: 40px;
     }
-   
-    .logo img{
-       width: 88px;
+
+    .logo img {
+        width: 88px;
     }
-    .encriptador{
+
+    .encriptador {
         padding: 0px 40px;
     }
-    .mensaje{
+
+    .mensaje {
         width: 688px;
         height: 500px;
     }
-    .advertencia{
+
+    .advertencia {
         width: 688px;
     }
-    .botones{
+
+    .botones {
         width: 688px;
     }
-    .boton{
+
+    .boton {
         width: 332px;
         margin: 4px;
     }
- 
-    .codificador{        
+
+    .codificador {
+        align-items: center;
+        height: 248px;
+    }
+
+    .codificado {
+        width: 680px;
+        height: 140px;
+        margin: 44px 40px;
+       
+    }
+    .mns-codificado{
+        width: 624px;
+        height: 180px;
+        
+    }
+    .copiar{
+        width: 624px;
+        height: 68px;
+        margin: auto;
+    }
+
+    .muneco {
+        display: none;
+    }
+}
+
+@media screen and (max-width:415px) and (min-width:400px) {
+    .contenido {
+        flex-direction: column;
+        margin: 0px;
+        height: auto;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 20px 0px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .encriptador {
+        width: 380px;
+        height: 640px;
+        margin: 16px;
+
+    }
+
+    .mns-codificado{
+        width: 280;
+        height: 440px;
+        font-size: 24px;
+    }
+
+    .mensaje {
+        margin: 8px 0px 8px;
+        width: 100%;
+        height: 400px;
+    }
+
+    .advertencia {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .botones {
+        width: 100%;
+        height: 158px;
         align-items: center;
     }
-    .codificado{
-        width: 680px;
-        height: 133px;
-        margin: 44px 40px;
+
+    .boton {
+        width: 100%;
+        margin: 8px 0px;
     }
-    .muneco{
-        width: 0;
-        visibility: hidden;
-        margin: 0 ;  
+
+    .copiar{
+        width: 280px;
+        margin: auto;
     }
-}
 
-@media screen and (max-width:415px) and (min-width:400px){
-.contenido{
-    flex-direction: column;
-    margin: 0px;
-     
- }
- div{
-    display: flex;
-    flex-direction: column;
- }
- .col {
-    width: 100%;
- }
+    .codificador {
+        align-items: center;
+    }
 
- .logo {
-     margin: 20px 0px;
- }
+    .codificado {
+        margin: 0px 16px;
+        width: 380px;
+        height: 140px;
+    }
 
- .logo img{
-    width: 80px;
- }
- .encriptador{
-    width: 380px;
-    height: 640px;
-    margin: 16px;
-
- }
- .mensaje{
-    margin: 8px 0px 8px;
-     width: 100%;
-     height: 400px;
- }
-
- .advertencia{
-     width: 100%;
-     font-size: 12px;
- }
- .botones{
-     width: 100%;
-     height: 158px;
-     align-items: center;
- }
- .boton{
-    width: 100%;
-    margin: 8px 0px;
- }
-
- .codificador{
-    align-items: center;
- }
- .codificado{
-    margin: 0px 16px;
-    width: 380px;
-    height: 140px;
-}
- .muneco{
-     width: 0;
-     visibility: hidden;
-     margin: 0 ;  
- }
+    .muneco {
+        display: none;
+    }
 
 }
